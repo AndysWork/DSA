@@ -71,3 +71,8 @@ function printAllNumbersThenAllPairSums(numbers) {
 printAllNumbersThenAllPairSums([1, 2, 3, 4, 5]);
 
 // BIG O(n + n^2) => O(n^2) - Quadratic Time - Here n^2 is the dominant term
+
+/* 
+An example of an O(n!) complexity program is one that generates all permutations of a given list. 
+The factorial time complexity arises because there are n! (n factorial) permutations of a list of n elements.
+*/

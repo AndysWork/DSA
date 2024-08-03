@@ -55,3 +55,30 @@ Important Algorithms
 39. Locality Sensitive Hashing Algorithm
 40. SHA Algorithm
 */
+
+/* Data Structures - is a collection of data values, the relationships among them, 
+and the functions or operations that can be applied to the data. 
+1. How to build one?
+2. How to use it?
+*/
+
+/* Algorithms - is a set of instructions for accomplishing a task. */
+
+/* JS Datatypes 
+1. Number
+2. String
+3. Boolean
+4. Object
+5. Null
+6. Undefined
+7. Symbol
+*/
+
+/* DS Operations
+1. Insertion - Adding an element to the data structure
+2. Deletion - Removing an element from the data structure
+3. Traversal - Visiting all the elements of the data structure
+4. Searching - Finding an element in the data structure
+5. Sorting - Arranging the elements in a specific order
+6. Accessing - Retrieving the value of a specific element
+*/

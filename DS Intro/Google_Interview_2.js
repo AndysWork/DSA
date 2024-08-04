@@ -46,4 +46,18 @@ function checkMultiplePairSum(array, sum) {
   }
   return pairs;
 }
-console.log(checkMultiplePairSum(array, sum)); // [[3, 6], [7, 2]]
+//console.log(checkMultiplePairSum(array, sum)); // [[3, 6], [7, 2]]
+
+function returnIndexPairForSum(nums, target) {
+  // O(n)
+  let map = {};
+  let pairedIndexes = [];
+  for (let index = 0; index < nums.length; index++) {
+    if (map[nums[index]] !== undefined) {
+      pairedIndexes.push(map[nums[index]], index);
+    }
+    map[target - nums[index]] = index;
+  }
+  return pairedIndexes;
+}
+console.log(returnIndexPairForSum([3, 3], 6)); // [0, 1]

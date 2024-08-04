@@ -133,3 +133,15 @@ console.log(strings); // ["a", "b", "alien", "d"]
 console.log(removed); // ["c"]
 
 console.log(strings);
+
+/* 
+Pros and cons of arrays:
+Pros:
+Fast lookups
+Fast push/pop
+Ordered
+Cons:
+Slow inserts
+Slow deletes
+Fixed size (if using static arrays)
+*/

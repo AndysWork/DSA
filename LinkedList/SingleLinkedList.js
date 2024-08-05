@@ -136,6 +136,21 @@ class LinkedList {
     return this;
   }
 
+  reverse() {
+    let prev = null;
+    let current = this.head;
+    let next = null;
+
+    while (current !== null) {
+      next = current.next; // Store next node
+      current.next = prev; // Reverse current node's pointer
+      prev = current; // Move prev to current node
+      current = next; // Move to next node
+    }
+    this.head = prev; // Update head to the new first node
+    return this;
+  }
+
   traverseToIndex(index) {
     // O(n)
     let currentIndex = 0;
@@ -166,4 +181,7 @@ myLinkedList.prepend(1);
 myLinkedList.insert(2, 99);
 myLinkedList.remove(3);
 console.log(myLinkedList);
+console.log(myLinkedList.printList());
+
+myLinkedList.reverse();
 console.log(myLinkedList.printList());
